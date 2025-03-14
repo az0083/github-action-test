@@ -30,8 +30,8 @@ jobs:
 
       # - name: Download Kotlin Script
       #   run: |
-      #     curl -L -o script.kt https://raw.githubusercontent.com/username/repository/branch/path/to/script.kt
+      #     curl -L -o script.kts https://raw.githubusercontent.com/username/repository/branch/path/to/script.kts
 
       - name: Run Kotlin Script
         run: |
-          kotlinc -script script.kt
+          kotlinc -script script.kts
