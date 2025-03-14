@@ -1,3 +1,5 @@
+#!/usr/bin/env kotlin
+
 fun getGitDiff(): String {
     val process = ProcessBuilder("git", "diff")
         .redirectOutput(ProcessBuilder.Redirect.PIPE)

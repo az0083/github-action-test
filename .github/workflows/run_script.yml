@@ -25,13 +25,17 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
 
-      - name: Run commands
-        run: echo 'Command run'
+      - name: Show current directory
+        run: ls -la
 
       # - name: Download Kotlin Script
       #   run: |
       #     curl -L -o script.kts https://raw.githubusercontent.com/username/repository/branch/path/to/script.kts
 
-      - name: Run Kotlin Script
+      - name: Run Kotlin Script via kotlinc
         run: |
           kotlinc -script script.kts
+
+      - name: Run Kotlin Script directly
+        run: |
+          ./script.kts
